@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Application Form</h1>
+     <p id="description">Thank you for choosing our institution to gain knownlwdge and skills</p>
+    <form id="survey-form" method="POST">
+      <fieldset>
+        <label for="name" id="name-label">Name <input id="name" name="name" type="text" placeholder="Your Name" required />
+        </label>
+        <label for="email" id="email-label">Email <input id="email" name="email" type="email" placeholder="Your email" required />
+        </label>
+        <label for="number" id="number-label">Age <input id="number" name="age" type="number" min="10" max="99" placeholder="Your Age" />
+        </label>
+        <label for="dropdown">What is your level of education?  
+          <select id="dropdown" name="name" >
+            <option value="">(select one)</option>
+            <option value="1">High school certitificate</option>
+            <option value="2">Bachelor's Degree</option>
+            <option value="3">Master's Degree</option>
+            <option value="4">Doctoral Degree</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>How did you know about?</legend>
+        <label for="friends">
+          <input type="radio" id="friends" class="inline" name="referrer" value="1" checked /> Friends
+        </label>
+         <label for="linedin">
+          <input type="radio" id="linkedin" class="inline" name="referrer" value="2" checked /> LinkedIn
+        </label>
+        <label for="others">
+          <input type="radio" id="others" class="inline" name="referrer" value="3" checked /> Others
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>What fields do you have interests in? (you can choose more than one)</legend>
+        <label for="ai-ml">
+        <input id="ai-ml" type="checkbox" value="10" class="inline" /> Artificial Intelligence and Machine Learning
+        </label>
+        <label for="data-science">
+          <input id="data-science" type="checkbox" value="20" class="inline" /> Data science</label>
+        <label for="cyber-security"><input id="cyber-security" type="checkbox" value="30" class="inline" /> Cyber security</label>
+        <label for="software-engineering"><input id="software-engineering" type="checkbox" value="40" class="inline" /> Software Engineering</label>
+        
+        </fieldset>
+     
+
+        
+       <label for="bio"> Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding for fun..."></textarea>
+        </label>
+     
+      
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="60" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
